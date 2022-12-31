@@ -1,7 +1,7 @@
 // vars ========================================
 
 const headline = document.createElement("h1");
-headline.innerHTML = "KoBurger";
+headline.innerHTML = "ScriptBurger";
 
 let price = 3.90;
 price.id = "startPrice";
@@ -150,7 +150,7 @@ function removeLettuceFun() {
 
 function addCheeseFun() {
     const cheese = document.createElement("div");
-    const cheesePrice = 0.70;
+    const cheesePrice = 0.10;
     cheese.className = "cheese";
     cheese.id = "cheese";
     const ham = document.getElementById("ham");
@@ -161,10 +161,10 @@ function addCheeseFun() {
 
 function removeCheeseFun() {
     const removeCheese = document.getElementById("cheese");
-    const cheesePrice = 0.70;
+    const cheesePrice = 1.10;
     insideBan.removeChild(removeCheese);
-    addHamFun();
     removePrice(cheesePrice);
+    addHamFun();
 }
 
 // menu ========================================
